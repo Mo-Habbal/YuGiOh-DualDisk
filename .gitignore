@@ -14,3 +14,13 @@ export_credentials.cfg
 .mono/
 data_*/
 mono_crash.*.json
+
+# ======================
+# Exported builds / binaries
+# ======================
+*.pck
+*.x86_64
+*.x86_32
+*.arm32
+*.sh
+*.import
