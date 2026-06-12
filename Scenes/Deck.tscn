@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://uwl6k0kpqtgg"]
+
+[ext_resource type="Texture2D" uid="uid://1ufymwinufon" path="res://imgs/Cards/card back.jpg" id="1_57cf8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pbw6q"]
+size = Vector2(390, 538)
+
+[node name="Deck" type="Node2D" unique_id=60602881]
+z_index = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=224549984]
+position = Vector2(0, 1.0000019)
+scale = Vector2(0.4797049, 0.4540085)
+texture = ExtResource("1_57cf8")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=454826890]
+input_pickable = false
+monitoring = false
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1430893507]
+shape = SubResource("RectangleShape2D_pbw6q")

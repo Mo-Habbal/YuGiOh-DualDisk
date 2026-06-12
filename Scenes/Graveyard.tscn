@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://detilp2nb41at"]
+
+[ext_resource type="Script" uid="uid://bjc6e033oovfn" path="res://Scripts/graveyard.gd" id="1_64osm"]
+[ext_resource type="Texture2D" uid="uid://b5vqqq68a87ey" path="res://imgs/Cards/yugioh.jpg" id="2_64osm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pbw6q"]
+size = Vector2(390, 538)
+
+[node name="graveyard" type="Node2D" unique_id=928454081]
+script = ExtResource("1_64osm")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1695791817]
+position = Vector2(-8.940697e-06, -0.5000105)
+scale = Vector2(0.6842105, 0.6438027)
+texture = ExtResource("2_64osm")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=428358883]
+collision_layer = 8
+collision_mask = 8
+input_pickable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1860685626]
+shape = SubResource("RectangleShape2D_pbw6q")

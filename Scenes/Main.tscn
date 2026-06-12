@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://nsivatj2soac"]
+
+[ext_resource type="Texture2D" uid="uid://d3doxertl5g4d" path="res://imgs/Artboard.jpg" id="1_rgh2o"]
+[ext_resource type="Script" uid="uid://b6lva6arhr3cm" path="res://Scripts/cardManeger.gd" id="2_pbw6q"]
+[ext_resource type="PackedScene" uid="uid://uwl6k0kpqtgg" path="res://Scenes/Deck.tscn" id="2_v1gob"]
+[ext_resource type="PackedScene" uid="uid://d0ailniat8w6p" path="res://Scenes/cardSlot.tscn" id="3_v1gob"]
+[ext_resource type="Script" uid="uid://bka8u7gvta5qd" path="res://Scripts/playerHand.gd" id="4_rgh2o"]
+[ext_resource type="PackedScene" uid="uid://detilp2nb41at" path="res://Scenes/Graveyard.tscn" id="4_v1gob"]
+
+[node name="Main" type="Node2D" unique_id=1452515335]
+metadata/_edit_vertical_guides_ = [-1003.0]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1403605612]
+scale = Vector2(1.0003473, 0.9994444)
+texture = ExtResource("1_rgh2o")
+centered = false
+
+[node name="Deck" parent="." unique_id=60602881 instance=ExtResource("2_v1gob")]
+position = Vector2(2582, 1657)
+
+[node name="playerHand" type="Node2D" parent="." unique_id=323025457]
+script = ExtResource("4_rgh2o")
+
+[node name="CardManeger" type="Node2D" parent="." unique_id=1551959259]
+script = ExtResource("2_pbw6q")
+
+[node name="CardSlot" parent="CardManeger" unique_id=1055652811 instance=ExtResource("3_v1gob")]
+position = Vector2(2579, 521)
+
+[node name="CardSlot2" parent="CardManeger" unique_id=1309005220 instance=ExtResource("3_v1gob")]
+position = Vector2(2010, 521)
+
+[node name="CardSlot3" parent="CardManeger" unique_id=35094250 instance=ExtResource("3_v1gob")]
+position = Vector2(1440, 520)
+
+[node name="CardSlot4" parent="CardManeger" unique_id=325920500 instance=ExtResource("3_v1gob")]
+position = Vector2(871, 520)
+
+[node name="CardSlot5" parent="CardManeger" unique_id=1987158193 instance=ExtResource("3_v1gob")]
+position = Vector2(301, 520)
+
+[node name="CardSlot6" parent="CardManeger" unique_id=2023544791 instance=ExtResource("3_v1gob")]
+position = Vector2(2581, 1089)
+
+[node name="CardSlot7" parent="CardManeger" unique_id=1576751687 instance=ExtResource("3_v1gob")]
+position = Vector2(2012, 1089)
+
+[node name="CardSlot8" parent="CardManeger" unique_id=1589889011 instance=ExtResource("3_v1gob")]
+position = Vector2(1444, 1089)
+
+[node name="CardSlot9" parent="CardManeger" unique_id=1104412501 instance=ExtResource("3_v1gob")]
+position = Vector2(874, 1089)
+
+[node name="CardSlot10" parent="CardManeger" unique_id=54288152 instance=ExtResource("3_v1gob")]
+position = Vector2(305, 1089)
+
+[node name="graveyard" parent="." unique_id=928454081 instance=ExtResource("4_v1gob")]
+position = Vector2(304, 1654)
